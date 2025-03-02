@@ -38,7 +38,8 @@ Monitor Sensors - это CRUD приложение, предназначенно
   "unit": "bar", 
   "location": "kitchen", 
   "description": "description"
-}```
+}
+
 
 ## Пользователи и роли
 
