@@ -1,0 +1,31 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="a.bury">
+        <createTable tableName="sensor_type">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(50)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+        </createTable>
+
+        <insert tableName="sensor_type">
+            <column name="name" value="Pressure"/>
+        </insert>
+        <insert tableName="sensor_type">
+            <column name="name" value="Voltage"/>
+        </insert>
+        <insert tableName="sensor_type">
+            <column name="name" value="Temperature"/>
+        </insert>
+        <insert tableName="sensor_type">
+            <column name="name" value="Humidity"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

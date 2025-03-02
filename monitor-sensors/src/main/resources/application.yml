@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: MONITOR-SENSORS
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  liquibase:
+    change-log: db.changelog/changelog.xml
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: true
+    properties:
+      jakarta:
+        persistence:
+          sharedCache:
+            mode: UNSPECIFIED
+  security:
+    jwt:
+      secret: ${JWT_SECRET_PHRASE}
+      expired: 3600000
+
+logging:
+  level:
+    liquibase: DEBUG

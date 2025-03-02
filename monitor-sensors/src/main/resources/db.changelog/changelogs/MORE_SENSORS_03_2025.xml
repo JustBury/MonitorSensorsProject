@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="3" author="a.bury">
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440010"/>
+            <column name="name" value="Sensor 1"/>
+            <column name="model" value="model-1"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-1"/>
+            <column name="description" value="Description 1"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440011"/>
+            <column name="name" value="Sensor 2"/>
+            <column name="model" value="model-2"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-2"/>
+            <column name="description" value="Description 2"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440012"/>
+            <column name="name" value="Sensor 3"/>
+            <column name="model" value="model-3"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-3"/>
+            <column name="description" value="Description 3"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440013"/>
+            <column name="name" value="Sensor 4"/>
+            <column name="model" value="model-4"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-4"/>
+            <column name="description" value="Description 4"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440014"/>
+            <column name="name" value="Sensor 5"/>
+            <column name="model" value="model-5"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-5"/>
+            <column name="description" value="Description 5"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440015"/>
+            <column name="name" value="Sensor 6"/>
+            <column name="model" value="model-6"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-6"/>
+            <column name="description" value="Description 6"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440016"/>
+            <column name="name" value="Sensor 7"/>
+            <column name="model" value="model-7"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-7"/>
+            <column name="description" value="Description 7"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440017"/>
+            <column name="name" value="Sensor 8"/>
+            <column name="model" value="model-8"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-8"/>
+            <column name="description" value="Description 8"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440018"/>
+            <column name="name" value="Sensor 9"/>
+            <column name="model" value="model-9"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-9"/>
+            <column name="description" value="Description 9"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440019"/>
+            <column name="name" value="Sensor 10"/>
+            <column name="model" value="model-10"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-10"/>
+            <column name="description" value="Description 10"/>
+        </insert>
+
+        <!-- Продолжение для оставшихся 40 сенсоров -->
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544001A"/>
+            <column name="name" value="Sensor 11"/>
+            <column name="model" value="model-11"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-11"/>
+            <column name="description" value="Description 11"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544001B"/>
+            <column name="name" value="Sensor 12"/>
+            <column name="model" value="model-12"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-12"/>
+            <column name="description" value="Description 12"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544001C"/>
+            <column name="name" value="Sensor 13"/>
+            <column name="model" value="model-13"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-13"/>
+            <column name="description" value="Description 13"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544001D"/>
+            <column name="name" value="Sensor 14"/>
+            <column name="model" value="model-14"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-14"/>
+            <column name="description" value="Description 14"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544001E"/>
+            <column name="name" value="Sensor 15"/>
+            <column name="model" value="model-15"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-15"/>
+            <column name="description" value="Description 15"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544001F"/>
+            <column name="name" value="Sensor 16"/>
+            <column name="model" value="model-16"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-16"/>
+            <column name="description" value="Description 16"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440020"/>
+            <column name="name" value="Sensor 17"/>
+            <column name="model" value="model-17"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-17"/>
+            <column name="description" value="Description 17"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440021"/>
+            <column name="name" value="Sensor 18"/>
+            <column name="model" value="model-18"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-18"/>
+            <column name="description" value="Description 18"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440022"/>
+            <column name="name" value="Sensor 19"/>
+            <column name="model" value="model-19"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-19"/>
+            <column name="description" value="Description 19"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440023"/>
+            <column name="name" value="Sensor 20"/>
+            <column name="model" value="model-20"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-20"/>
+            <column name="description" value="Description 20"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440024"/>
+            <column name="name" value="Sensor 21"/>
+            <column name="model" value="model-21"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-21"/>
+            <column name="description" value="Description 21"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440025"/>
+            <column name="name" value="Sensor 22"/>
+            <column name="model" value="model-22"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-22"/>
+            <column name="description" value="Description 22"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440026"/>
+            <column name="name" value="Sensor 23"/>
+            <column name="model" value="model-23"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-23"/>
+            <column name="description" value="Description 23"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440027"/>
+            <column name="name" value="Sensor 24"/>
+            <column name="model" value="model-24"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-24"/>
+            <column name="description" value="Description 24"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440028"/>
+            <column name="name" value="Sensor 25"/>
+            <column name="model" value="model-25"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-25"/>
+            <column name="description" value="Description 25"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440029"/>
+            <column name="name" value="Sensor 26"/>
+            <column name="model" value="model-26"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-26"/>
+            <column name="description" value="Description 26"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544002A"/>
+            <column name="name" value="Sensor 27"/>
+            <column name="model" value="model-27"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-27"/>
+            <column name="description" value="Description 27"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544002B"/>
+            <column name="name" value="Sensor 28"/>
+            <column name="model" value="model-28"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-28"/>
+            <column name="description" value="Description 28"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544002C"/>
+            <column name="name" value="Sensor 29"/>
+            <column name="model" value="model-29"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-29"/>
+            <column name="description" value="Description 29"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544002D"/>
+            <column name="name" value="Sensor 30"/>
+            <column name="model" value="model-30"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-30"/>
+            <column name="description" value="Description 30"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544002E"/>
+            <column name="name" value="Sensor 31"/>
+            <column name="model" value="model-31"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-31"/>
+            <column name="description" value="Description 31"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544002F"/>
+            <column name="name" value="Sensor 32"/>
+            <column name="model" value="model-32"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-32"/>
+            <column name="description" value="Description 32"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440030"/>
+            <column name="name" value="Sensor 33"/>
+            <column name="model" value="model-33"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-33"/>
+            <column name="description" value="Description 33"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440031"/>
+            <column name="name" value="Sensor 34"/>
+            <column name="model" value="model-34"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-34"/>
+            <column name="description" value="Description 34"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440032"/>
+            <column name="name" value="Sensor 35"/>
+            <column name="model" value="model-35"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-35"/>
+            <column name="description" value="Description 35"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440033"/>
+            <column name="name" value="Sensor 36"/>
+            <column name="model" value="model-36"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-36"/>
+            <column name="description" value="Description 36"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440034"/>
+            <column name="name" value="Sensor 37"/>
+            <column name="model" value="model-37"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-37"/>
+            <column name="description" value="Description 37"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440035"/>
+            <column name="name" value="Sensor 38"/>
+            <column name="model" value="model-38"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-38"/>
+            <column name="description" value="Description 38"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440036"/>
+            <column name="name" value="Sensor 39"/>
+            <column name="model" value="model-39"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-39"/>
+            <column name="description" value="Description 39"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440037"/>
+            <column name="name" value="Sensor 40"/>
+            <column name="model" value="model-40"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-40"/>
+            <column name="description" value="Description 40"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440038"/>
+            <column name="name" value="Sensor 41"/>
+            <column name="model" value="model-41"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-41"/>
+            <column name="description" value="Description 41"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440039"/>
+            <column name="name" value="Sensor 42"/>
+            <column name="model" value="model-42"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-42"/>
+            <column name="description" value="Description 42"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544003A"/>
+            <column name="name" value="Sensor 43"/>
+            <column name="model" value="model-43"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-43"/>
+            <column name="description" value="Description 43"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544003B"/>
+            <column name="name" value="Sensor 44"/>
+            <column name="model" value="model-44"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-44"/>
+            <column name="description" value="Description 44"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544003C"/>
+            <column name="name" value="Sensor 45"/>
+            <column name="model" value="model-45"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-45"/>
+            <column name="description" value="Description 45"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544003D"/>
+            <column name="name" value="Sensor 46"/>
+            <column name="model" value="model-46"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-46"/>
+            <column name="description" value="Description 46"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544003E"/>
+            <column name="name" value="Sensor 47"/>
+            <column name="model" value="model-47"/>
+            <column name="range_id" value="3"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="location-47"/>
+            <column name="description" value="Description 47"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-44665544003F"/>
+            <column name="name" value="Sensor 48"/>
+            <column name="model" value="model-48"/>
+            <column name="range_id" value="4"/>
+            <column name="type" value="4"/>
+            <column name="unit" value="4"/>
+            <column name="location" value="location-48"/>
+            <column name="description" value="Description 48"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440040"/>
+            <column name="name" value="Sensor 49"/>
+            <column name="model" value="model-49"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="location-49"/>
+            <column name="description" value="Description 49"/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440041"/>
+            <column name="name" value="Sensor 50"/>
+            <column name="model" value="model-50"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="2"/>
+            <column name="unit" value="2"/>
+            <column name="location" value="location-50"/>
+            <column name="description" value="Description 50"/>
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>

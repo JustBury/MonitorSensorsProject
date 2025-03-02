@@ -1,0 +1,33 @@
+version: '1.0'
+services:
+  app:
+    build: .
+    image: app-sensors-1.0.0
+    container_name: app-sensors
+    environment:
+      DATABASE_URL: jdbc:postgresql://postgres:5432/monitor-db
+      DATABASE_PASSWORD: 1234
+      DATABASE_USERNAME: root
+      JWT_SECRET_PHRASE: NDQ1ZjAzNjQtMzViZi00MDRjLTljZjQtNjNjYWIyZTU5ZDYw
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/var/our_image_storage:/var/our_image_storage"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:17.3
+    container_name: monitor-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: monitor-db
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - 5444:5432
+    volumes:
+      - monitor-sensors-db:/var/lib/postgresql/data
+
+volumes:
+  monitor-sensors-db:

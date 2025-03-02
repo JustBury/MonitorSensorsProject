@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="2" author="a.bury">
+
+        <createTable tableName="sensor">
+            <column name="uuid" type="varchar(36)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="model" type="varchar(255)"/>
+            <column name="range_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="bigint"/>
+            <column name="unit" type="bigint"/>
+            <column name="location" type="varchar(255)"/>
+            <column name="description" type="text"/>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="sensor"
+                                 baseColumnNames="range_id"
+                                 referencedTableName="range"
+                                 referencedColumnNames="id"
+                                 constraintName="fk_sensor_range"/>
+
+        <addForeignKeyConstraint baseTableName="sensor"
+                                 baseColumnNames="type"
+                                 constraintName="fk_sensor_type"
+                                 referencedTableName="sensor_type"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="sensor"
+                                 baseColumnNames="unit"
+                                 constraintName="fk_sensor_unit"
+                                 referencedTableName="sensor_unit"
+                                 referencedColumnNames="id"/>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440000"/>
+            <column name="name" value="Barometer"/>
+            <column name="model" value="ac-23"/>
+            <column name="range_id" value="1"/>
+            <column name="type" value="1"/>
+            <column name="unit" value="1"/>
+            <column name="location" value="kitchen"/>
+            <column name="description" value="A sensor for measuring atmospheric pressure."/>
+        </insert>
+
+        <insert tableName="sensor">
+            <column name="uuid" value="550e8400-e29b-41d4-a716-446655440001"/>
+            <column name="name" value="ThermoSensor"/>
+            <column name="model" value="tc-45"/>
+            <column name="range_id" value="2"/>
+            <column name="type" value="3"/>
+            <column name="unit" value="3"/>
+            <column name="location" value="living room"/>
+            <column name="description" value="A sensor for measuring temperature."/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
